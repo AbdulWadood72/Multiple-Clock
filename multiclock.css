@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(45deg, #1870ed 0, #f18f88 100%);
+    font-family: 'Montserrat', 'sans-serif';
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .clocks-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Add spacing between clocks */
+    max-width: 1200px; /* Optional: Restrict maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .clock-wrapper {
+    text-align: center;
+  }
+  
+  .clock-container {
+    background-color: #080808;
+    border-radius: 5px;
+    padding: 60px 20px;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.15),
+      0 15px 90px 30px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .clock-col {
+    text-align: center;
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  .clock-timer {
+    font-size: 3.2rem;
+    color: #fff;
+  }
+  
+  .clock-label {
+    color: rgba(255, 255, 255, 0.807);
+    text-transform: uppercase;
+    font-size: 1.0rem;
+    margin-top: 10px;
+  }
+  
+  .title {
+    background: linear-gradient(45deg, #3e5a6c, #f18f88);
+    color: #080808;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 825px) {
+    .clocks-container {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+  }
+  
